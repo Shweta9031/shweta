@@ -1,0 +1,55 @@
+.baba-card {
+  display: flex; flex-direction: column;
+  background: #141414; border: 1px solid #1e1e1e;
+  border-radius: 12px; overflow: hidden;
+  transition: transform 0.25s, border-color 0.25s, box-shadow 0.25s;
+  cursor: pointer;
+}
+.baba-card:hover {
+  transform: translateY(-4px);
+  border-color: #FF6B00;
+  box-shadow: 0 8px 30px rgba(255,107,0,0.15);
+}
+
+.baba-card-img-wrap {
+  position: relative;
+  height: 240px;
+  overflow: hidden;
+  background: #1a1a1a;
+}
+.baba-card-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  transition: transform 0.3s;
+  display: block;
+}
+.baba-card:hover .baba-card-img-wrap img { transform: scale(1.05); }
+
+.baba-card-category {
+  position: absolute; top: 10px; right: 10px;
+  padding: 3px 10px; border-radius: 20px;
+  font-size: 0.72rem; font-weight: 600; color: #fff;
+}
+
+.baba-card-body { padding: 0.9rem; display: flex; flex-direction: column; gap: 0.35rem; flex: 1; }
+.baba-card-body h3 { font-size: 0.95rem; font-weight: 700; color: #fff5e6; }
+.baba-card-title { font-size: 0.78rem; color: #FF9933; font-weight: 500; }
+.baba-card-location { font-size: 0.75rem; color: #888; }
+.baba-card-desc {
+  font-size: 0.8rem; color: #aaa; line-height: 1.5; margin-top: 0.2rem;
+  display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+}
+
+.baba-card-footer {
+  display: flex; justify-content: space-between; align-items: center;
+  margin-top: auto; padding-top: 0.6rem; border-top: 1px solid #1e1e1e;
+}
+.baba-card-followers { font-size: 0.75rem; color: #777; }
+.baba-card-more { font-size: 0.78rem; font-weight: 600; color: #FF6B00; }
+
+@media (max-width: 480px) {
+  .baba-card-img-wrap { height: 200px; }
+  .baba-card-body h3 { font-size: 0.9rem; }
+}

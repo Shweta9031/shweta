@@ -1,0 +1,215 @@
+.detail-page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 4rem;
+}
+
+.detail-back {
+  background: none;
+  border: 1px solid #2a2a2a;
+  color: #aaa;
+  padding: 0.4rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.88rem;
+  margin-bottom: 1.5rem;
+  transition: border-color 0.2s, color 0.2s;
+}
+.detail-back:hover { border-color: #FF6B00; color: #FF6B00; }
+
+.detail-banner {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid #2a1200;
+  margin-bottom: 2rem;
+}
+
+.detail-banner-glow {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.detail-banner-inner {
+  position: relative;
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.detail-img-wrap {
+  width: 200px;
+  height: 240px;
+  flex-shrink: 0;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 2px solid #2a1200;
+}
+
+.detail-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.detail-banner-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  padding-top: 0.5rem;
+  min-width: 0;
+}
+
+.detail-category {
+  display: inline-block;
+  padding: 3px 12px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #fff;
+  width: fit-content;
+}
+
+.detail-banner-info h1 {
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  font-weight: 800;
+  color: #fff5e6;
+  line-height: 1.2;
+}
+
+.detail-title { color: #FF9933; font-size: 1rem; font-weight: 500; }
+
+.detail-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-top: 0.5rem;
+}
+
+.detail-meta span {
+  font-size: 0.82rem;
+  color: #888;
+  background: #1a1a1a;
+  padding: 0.3rem 0.8rem;
+  border-radius: 6px;
+  border: 1px solid #222;
+}
+
+.detail-content { display: flex; flex-direction: column; gap: 2rem; }
+
+.detail-section {
+  background: #111;
+  border: 1px solid #1e1e1e;
+  border-radius: 12px;
+  padding: 1.5rem;
+}
+
+.detail-section h2 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #FF9933;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #1e1e1e;
+}
+
+.detail-section p { color: #bbb; line-height: 1.8; font-size: 0.95rem; }
+
+.detail-work-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.detail-work-list li {
+  color: #bbb;
+  font-size: 0.92rem;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.detail-yt-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.7rem 1.4rem;
+  border-radius: 8px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: opacity 0.2s, transform 0.2s;
+}
+.detail-yt-btn:hover { opacity: 0.85; transform: translateY(-2px); }
+
+.detail-nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2.5rem;
+  gap: 1rem;
+}
+
+.detail-nav-btn {
+  padding: 0.6rem 1.2rem;
+  border: 1px solid #2a2a2a;
+  border-radius: 8px;
+  color: #aaa;
+  font-size: 0.88rem;
+  transition: border-color 0.2s, color 0.2s;
+  max-width: 45%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.detail-nav-btn:hover { border-color: #FF6B00; color: #FF6B00; }
+
+.detail-not-found {
+  text-align: center;
+  padding: 6rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  color: #666;
+}
+.detail-not-found span { font-size: 3rem; }
+
+.btn-back {
+  padding: 0.6rem 1.4rem;
+  background: #FF6B00;
+  color: #fff;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .detail-banner-inner {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1.5rem;
+    gap: 1.2rem;
+  }
+  .detail-img-wrap { width: 180px; height: 220px; }
+  .detail-meta { justify-content: center; }
+  .detail-category { margin: 0 auto; }
+  .detail-nav { flex-direction: column; }
+  .detail-nav-btn { max-width: 100%; }
+}
+
+@media (max-width: 480px) {
+  .detail-page { padding: 1.5rem 0.8rem 3rem; }
+  .detail-img-wrap { width: 150px; height: 185px; }
+  .detail-banner-inner { padding: 1.2rem; }
+  .detail-section { padding: 1.2rem; }
+  .detail-meta span { font-size: 0.75rem; padding: 0.25rem 0.6rem; }
+  .detail-yt-btn { font-size: 0.82rem; padding: 0.6rem 1rem; width: 100%; justify-content: center; }
+}
