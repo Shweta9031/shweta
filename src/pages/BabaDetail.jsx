@@ -24,7 +24,7 @@ export default function BabaDetail() {
   return (
     <div className="detail-page">
       {/* Back */}
-      <button className="detail-back" onClick={() => navigate(-1)}>← Back</button>
+      <button className="detail-back" onClick={() => navigate(-1)}>Back</button>
 
       {/* Hero Banner */}
       <div className="detail-banner" style={{ background: `linear-gradient(135deg, #1a0800, #0d0d0d)` }}>
