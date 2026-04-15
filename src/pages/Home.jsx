@@ -65,7 +65,7 @@ function HeroSlider() {
 }
 
 export default function Home() {
-  const featured = babas.slice(0, 6);
+  const featured = babas.slice(0, 8);
 
   return (
     <div className="home">

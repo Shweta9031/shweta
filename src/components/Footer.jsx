@@ -5,7 +5,7 @@ import './Footer.css';
 const quickLinks = [
   { to: '/', label: 'Home' },
   { to: '/babas', label: 'Saints & Sages' },
-  { to: '/blogs', label: 'Blogs' },
+  { to: '/blogs', label: 'Gallery' },
   { to: '/testimonials', label: 'Testimonials' },
   { to: '/about', label: 'About Us' },
 ];

@@ -10,7 +10,7 @@ export default function Navbar() {
     { to: '/', label: 'Home' },
      { to: '/about', label: 'About Us' },
     { to: '/babas', label: 'Saints & Sages' },
-    { to: '/blogs', label: 'Blogs'},
+    { to: '/blogs', label: 'Gallery'},
     { to: '/testimonials', label: 'Testimonials'},
     // { to: '/contact', label: 'Contact Us'},
   ];

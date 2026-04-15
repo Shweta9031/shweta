@@ -326,7 +326,7 @@
 @media (max-width: 900px) {
   .legal-body { grid-template-columns: 1fr; padding: 2rem 1.5rem 4rem; }
   .legal-toc { position: static; }
-  .legal-toc-inner ul { flex-direction: row; flex-wrap: wrap; }
+  .legal-toc-inner ul { flex-direction: column; flex-wrap: nowrap; }
   .sitemap-grid { grid-template-columns: 1fr; }
   .legal-cards { grid-template-columns: 1fr; }
   .legal-rights-grid { grid-template-columns: 1fr; }

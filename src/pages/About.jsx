@@ -50,7 +50,7 @@ export default function About() {
           </p>
           <div className="about-hero-actions">
             <Link to="/babas" className="about-btn-primary">Explore Saints →</Link>
-            <Link to="/contact" className="about-btn-secondary">Get In Touch</Link>
+            {/* <Link to="/contact" className="about-btn-secondary">Get In Touch</Link> */}
           </div>
         </div>
       </section>
